@@ -46,8 +46,7 @@ Welcome to my professional portfolio. This project is a multi-page, fully respon
 ├── Images/               # Optimized assets and project screenshots
 ├── JS/
 │   ├── projects.js       # Dynamic project rendering logic
-│   ├── certificates.js   # Certificate modal & data logic
-│   └── skills.js         # Technical stack data
+│   └── certificates.js   # Certificate modal & data logic
 ├── home.html             # High-impact Hero section
 ├── about.html            # Detailed personal & professional bio
 ├── skills.html           # Visual representation of tech stack
