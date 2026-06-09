@@ -83,6 +83,13 @@ const certificates = [
         date: "Jan 2026",
         issuer: "CBA"
     },
+    {
+        src: "Images/Certificates/13.png",
+        title: "Robotics and Controls Job Simulation",
+        desc: "Johnson & Johnson MedTech - Diagnosed surgical robot arm delays and optimized system responsiveness.",
+        date: "May 2026",
+        issuer: "Johnson & Johnson MedTech"
+    },
 ];
 
 const container = document.getElementById("certificates-container");
