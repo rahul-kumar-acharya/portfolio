@@ -1,55 +1,67 @@
-# 🚀 Rahul Kumar Acharya | Full-Stack Developer Portfolio
+# 🚀 Rahul Kumar Acharya | Full-Stack Web Developer Portfolio
 
 <div align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-yes-0ea5e9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Main%20Stack-Django%20%26%20React-white?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Main%20Stack-React%20%26%20DRF-06b6d4?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Styling-Tailwind%20CSS%20v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </div>
 
 <br />
 
-Welcome to my professional portfolio. This project is a multi-page, fully responsive web experience built to showcase my journey from a Computer Science student to a **Full-Stack Web Developer**.
+Welcome to my professional developer portfolio. This project is a modern, high-performance **React Single Page Application (SPA)** compiled with **Vite** and styled using **Tailwind CSS v4** to showcase my journey as a **Full-Stack Web Developer**.
 
 ---
 
 ## 🛠️ The Tech Arsenal
 
-### **Frontend**
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+### **Frontend & Interface**
+* **React 19**: Component-driven architecture and dynamic client-side rendering.
+* **Tailwind CSS v4**: Native, compiler-fast styles with visual grid designs.
+* **HTML5 & CSS3**: Semantic document structure and custom animations.
+* **JavaScript (ES6+)**: Dynamic asynchronous operations.
 
-### **Backend & Cloud**
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
-![Django](https://img.shields.io/badge/django-%23092e20.svg?style=for-the-badge&logo=django&logoColor=white) 
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white) 
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) 
-![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+### **Backend & APIs**
+* **Python**: Core programming logic.
+* **Django REST Framework (DRF)**: Design and architecture of secure, scalable APIs and relational endpoints.
+* **PostgreSQL & SQLite**: Relational database setups.
+* **Firebase**: Real-time databases and web services.
+
+### **Hosting & Workflow**
+* **Vite**: Ultra-fast hot-reloading bundler.
+* **Git & GitHub**: Version control, collaborative branches, and repository audits.
+* **Vercel, Netlify & Render**: Continuous deployment integrations and serverless redirects.
 
 ---
 
 ## ✨ Key Features
 
-* **Glassmorphism UI:** Modern, translucent design with a focus on high-quality typography (Inter font).
-* **Dynamic Skills & Projects:** Data-driven pages that use JavaScript arrays to generate content automatically.
-* **Interactive Modal:** Image popup system for viewing Certificates without leaving the page.
-* **EmailJS Integration:** A fully functional contact form that sends messages directly to my inbox without a custom server.
-* **Responsive Architecture:** Optimized for everything from mobile devices to ultra-wide monitors.
+* **Sleek Cyber-Minimalist Theme**: Custom dark mode featuring an architectural grid overlay (`.grid-bg`) and glowing background radial gradients.
+* **Clean History Routing**: Client-side single-page router utilizing `history.pushState` to completely eliminate hash links (`#`) in browser URLs.
+* **Asymmetric Skills Grid**: Categorized and structured list layouts that break grid uniformity for clear visual hierarchy.
+* **Case Study Projects Layout**: Alternating editorial presentation rows for major case studies, and a compact folder vault grid for utility experiments.
+* **Secure Environment Configuration**: Sensitive third-party API configs (such as EmailJS) are safely configured using local `.env` variables and loaded via `import.meta.env`.
+* **ATS-Friendly Resume**: A single-page professional resume compiled programmatically to PDF and linked directly in the header navigation.
+* **EmailJS Form Portal**: Secure contact page allowing visitors to dispatch emails directly to my inbox with active loading indicators.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-├── Images/               # Optimized assets and project screenshots
-├── JS/
-│   ├── projects.js       # Dynamic project rendering logic
-│   └── certificates.js   # Certificate modal & data logic
-├── home.html             # High-impact Hero section
-├── about.html            # Detailed personal & professional bio
-├── skills.html           # Visual representation of tech stack
-├── projects.html         # Grid of live & repository links
-├── certificates.html     # Professional credentials & simulations
-└── contact.html          # EmailJS powered contact portal
+├── public/
+│   ├── Images/           # Brand assets, certificates, and project screenshots
+│   ├── assets/
+│   │   └── resume.pdf    # Compiled ATS-friendly PDF resume
+│   └── _redirects        # Netlify SPA routing redirects
+├── src/
+│   ├── components/       # Header, Footer, and common layout modules
+│   ├── hooks/            # Reusable custom hooks (e.g., useSEO)
+│   ├── pages/            # Page modules (Home, About, Skills, Projects, Certs, Contact)
+│   ├── App.jsx           # Main SPA path routing coordinate
+│   ├── index.css         # Global variables, scrollbars, and Tailwind v4 directives
+│   └── main.jsx          # React app mount entrypoint
+├── index.html            # Core document with default static SEO & favicon
+├── vercel.json           # Vercel SPA routing redirects
+├── package.json          # Dependency scripts & compiler packages
+└── vite.config.js        # Vite bundler & Tailwind v4 compiler configuration
+```

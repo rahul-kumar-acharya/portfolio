@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Transparent background, rendering on the card's white square -->
+
+  <!-- Blueprint/Drafting Grid Lines (very thin, light grey) -->
+  <!-- Horizontal center line -->
+  <line x1="20" y1="250" x2="480" y2="250" stroke="#e2e8f0" stroke-width="1.5" />
+  
+  <!-- Primary Vertical construction lines -->
+  <line x1="100" y1="20" x2="100" y2="480" stroke="#e2e8f0" stroke-width="1" />
+  <line x1="252" y1="20" x2="252" y2="480" stroke="#e2e8f0" stroke-width="1" />
+  <line x1="404" y1="20" x2="404" y2="480" stroke="#e2e8f0" stroke-width="1" />
+  
+  <!-- Secondary background grid lines -->
+  <line x1="50" y1="20" x2="50" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  <line x1="150" y1="20" x2="150" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  <line x1="200" y1="20" x2="200" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  <line x1="300" y1="20" x2="300" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  <line x1="350" y1="20" x2="350" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  <line x1="450" y1="20" x2="450" y2="480" stroke="#f1f5f9" stroke-width="0.5" />
+  
+  <!-- Diagonal drafting lines -->
+  <line x1="100" y1="330" x2="252" y2="210" stroke="#cbd5e1" stroke-width="1" />
+  <line x1="252" y1="210" x2="404" y2="330" stroke="#cbd5e1" stroke-width="1" />
+  
+  <!-- Precision point circles -->
+  <circle cx="252" cy="210" r="4" fill="none" stroke="#cbd5e1" stroke-width="1" />
+  <circle cx="100" cy="330" r="2" fill="#cbd5e1" />
+  <circle cx="404" cy="330" r="2" fill="#cbd5e1" />
+  
+  <!-- "django" text at the top-left -->
+  <text x="25" y="150" font-family="'Inter', 'Georgia', serif" font-weight="normal" font-size="64" fill="#2d3748">django</text>
+  
+  <!-- "REST" text in the center with outline style -->
+  <text x="250" y="330" font-family="'Inter', 'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="160" text-anchor="middle" fill="none" stroke="#831f18" stroke-width="7" letter-spacing="4">REST</text>
+  
+  <!-- "framework" text at the bottom-right -->
+  <text x="475" y="390" font-family="'Inter', 'Arial', sans-serif" font-weight="normal" font-size="64" text-anchor="end" fill="#2d3748">framework</text>
+</svg>
