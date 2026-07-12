@@ -104,7 +104,7 @@ const Certificates = () => {
       {selectedCert && (
         <div
           onClick={closeCert}
-          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4"
+          className="fixed inset-0 z-100 bg-black/95 backdrop-blur-md flex items-center justify-center p-4"
         >
           <div className="relative max-w-5xl w-full flex flex-col items-center">
             <button

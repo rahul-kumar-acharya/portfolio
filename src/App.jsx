@@ -81,9 +81,9 @@ function App() {
     <div className="bg-brand-bg text-zinc-300 min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-white relative grid-bg overflow-x-hidden">
       
       {/* Background ambient lighting glows */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 blur-[130px] rounded-full pointer-events-none z-0"></div>
-      <div className="absolute top-[40%] left-0 w-[400px] h-[400px] bg-indigo-500/3 blur-[120px] rounded-full pointer-events-none z-0"></div>
-      <div className="absolute bottom-10 right-0 w-[450px] h-[450px] bg-cyan-500/4 blur-[130px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-0 right-0 w-125 h-125 bg-cyan-500/5 blur-[130px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-[40%] left-0 w-100 h-100 bg-indigo-500/3 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute bottom-10 right-0 w-112.5 h-112.5 bg-cyan-500/4 blur-[130px] rounded-full pointer-events-none z-0"></div>
 
       <div className="relative z-10 flex flex-col flex-1">
         {/* Dynamic Header Component */}

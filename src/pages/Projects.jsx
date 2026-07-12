@@ -179,7 +179,7 @@ const Projects = () => {
         {utilityProjects.map((project, index) => (
           <div
             key={index}
-            className="bg-zinc-950/20 border border-zinc-900 rounded-xl p-6 hover:border-zinc-800 hover:translate-y-[-4px] transition duration-300 flex flex-col justify-between shadow-xl"
+            className="bg-zinc-950/20 border border-zinc-900 rounded-xl p-6 hover:border-zinc-800 hover:-translate-y-1 transition duration-300 flex flex-col justify-between shadow-xl"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">

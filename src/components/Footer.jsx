@@ -28,7 +28,7 @@ const Footer = ({ navigateTo }) => {
         {/* Middle Column: Quick Links Grid */}
         <div className="space-y-4">
           <h5 className="text-xs font-mono uppercase tracking-widest text-zinc-400">// Sitemap</h5>
-          <div className="grid grid-cols-2 gap-2 max-w-[200px]">
+          <div className="grid grid-cols-2 gap-2 max-w-50">
             {quickLinks.map((link) => (
               <button
                 key={link.page}
