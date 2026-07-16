@@ -37,12 +37,23 @@ const useSEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage 
     updateProperty("og:title", ogTitle || title);
     updateProperty("og:description", ogDescription || description);
     updateProperty("og:image", ogImage || "/Images/Rahul.png");
-    updateProperty("og:url", window.location.href);
+    updateProperty("og:url", `https://acharyarahul.in${window.location.pathname}`);
 
     // Apply Twitter Cards
     updateMeta("twitter:title", ogTitle || title);
     updateMeta("twitter:description", ogDescription || description);
     updateMeta("twitter:image", ogImage || "/Images/Rahul.png");
+
+    // Apply Canonical Link (Unifies www and non-www crawl paths to standard domain)
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    // Clean trailing slashes if present to ensure a single URL form
+    const cleanedPath = window.location.pathname.replace(/\/$/, "");
+    canonical.href = `https://acharyarahul.in${cleanedPath || "/"}`;
 
   }, [title, description, keywords, ogTitle, ogDescription, ogImage]);
 };
