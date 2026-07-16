@@ -4,26 +4,17 @@ import useSEO from '../hooks/useSEO';
 const Projects = () => {
   useSEO({
     title: "Projects Portfolio | Rahul Kumar Acharya",
-    description: "Case studies of full-stack engineering and utility projects built by Rahul Kumar Acharya, including PrepWise (AI Interview platform) and TechLancePrep.",
-    keywords: "Rahul Kumar Acharya Projects, PrepWise, TechLancePrep, EduMarks, Python Django Projects, React Portfolio"
+    description: "Case studies of full-stack engineering systems built by Rahul Kumar Acharya, featuring PrepWise and TechlancePrep (Technical Interview Practice).",
+    keywords: "Rahul Kumar Acharya Projects, PrepWise, TechlancePrep, EduMarks, Python Django Projects, React Portfolio, Software Engineer Portfolio"
   });
   const featuredProjects = [
     {
-      title: "PrepWise",
-      subtitle: "Interview Preparation",
-      description: "An interview preparation platform for full-stack developers. Features dynamic domain-based routing, a specialized 'STAR Method' behavioral engine, and a low-latency coding laboratory with integrated syntax-themed solution modeling.",
-      image: "/Images/Projects/3.webp", 
-      github: "https://github.com/rahul-kumar-acharya/prepwise",
-      live: "https://prepwise.acharyaworks.in/",
-      tech: ["React", "Tailwind CSS", "Framer Motion"]
-    },
-    {
       title: "TechlancePrep",
       subtitle: "DSA Command Center",
-      description: "High-performance Engineering Command Center for mastering DSA and System Design. Features granular user telemetry, secure 'Identity Vault' profiles, and a robust administrative CRUD engine.",
-      image: "/Images/Projects/2.webp",
+      description: "High-performance interview preparation platform with 600+ expert-curated coding, core technical, and behavioral challenges. Built with a premium natural light-mode UI, real-time user telemetry analytics, and dynamic search engine verification protocols.",
+      image: "/Images/Projects/techlanceprep.webp",
       github: "https://github.com/rahul-kumar-acharya/techlanceprep",
-      live: "",
+      live: "https://techlanceprep.in/",
       tech: ["Python", "Django", "Tailwind CSS", "PostgreSQL"]
     },
     {
@@ -34,7 +25,16 @@ const Projects = () => {
       github: "https://github.com/rahul-kumar-acharya/MarksheetGenerator",
       live: "",
       tech: ["Python", "Django", "Tailwind CSS", "ReportLab"]
-    }
+    },
+    {
+      title: "PrepWise",
+      subtitle: "Interview Preparation",
+      description: "An interview preparation platform for full-stack developers. Features dynamic domain-based routing, a specialized 'STAR Method' behavioral engine, and a low-latency coding laboratory with integrated syntax-themed solution modeling.",
+      image: "/Images/Projects/3.webp", 
+      github: "https://github.com/rahul-kumar-acharya/prepwise",
+      live: "https://prepwise.acharyaworks.in/",
+      tech: ["React", "Tailwind CSS", "Framer Motion"]
+    },
   ];
 
   const utilityProjects = [
@@ -145,7 +145,7 @@ const Projects = () => {
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     className="flex items-center gap-2 text-zinc-400 font-semibold hover:text-white transition-all text-sm"
                   >
                     <i className="fa-brands fa-github text-lg"></i> GitHub
@@ -154,7 +154,7 @@ const Projects = () => {
                     <a
                       href={project.live}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       className="px-5 py-2 bg-cyan-500 text-black font-bold text-xs uppercase tracking-wider rounded hover:bg-cyan-400 transition-all flex items-center gap-1.5 cursor-pointer shadow-lg shadow-cyan-500/10 active:scale-98"
                     >
                       <i className="fa-solid fa-rocket"></i> Live
@@ -188,7 +188,7 @@ const Projects = () => {
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     className="text-zinc-500 hover:text-white transition-colors"
                     aria-label={`${project.title} github link`}
                   >
@@ -198,7 +198,7 @@ const Projects = () => {
                     <a
                       href={project.live}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       className="text-cyan-500 hover:text-cyan-400 transition-colors"
                       aria-label={`${project.title} live link`}
                     >
