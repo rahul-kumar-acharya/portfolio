@@ -29,6 +29,12 @@ const useSEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage 
       meta.content = content;
     };
 
+    const toAbsoluteUrl = (url) => {
+      if (!url) return '';
+      if (url.startsWith('http://') || url.startsWith('https://')) return url;
+      return `https://www.acharyarahul.in${url.startsWith('/') ? '' : '/'}${url}`;
+    };
+
     // Apply main descriptions and keywords
     updateMeta("description", description);
     updateMeta("keywords", keywords);
@@ -36,13 +42,13 @@ const useSEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage 
     // Apply Open Graph (Social SEO)
     updateProperty("og:title", ogTitle || title);
     updateProperty("og:description", ogDescription || description);
-    updateProperty("og:image", ogImage || "/Images/Rahul.png");
+    updateProperty("og:image", toAbsoluteUrl(ogImage || "/Images/Rahul.webp"));
     updateProperty("og:url", `https://www.acharyarahul.in${window.location.pathname}`);
 
     // Apply Twitter Cards
     updateMeta("twitter:title", ogTitle || title);
     updateMeta("twitter:description", ogDescription || description);
-    updateMeta("twitter:image", ogImage || "/Images/Rahul.png");
+    updateMeta("twitter:image", toAbsoluteUrl(ogImage || "/Images/Rahul.webp"));
 
     // Apply Canonical Link (Unifies www and non-www crawl paths to standard domain)
     let canonical = document.querySelector('link[rel="canonical"]');
