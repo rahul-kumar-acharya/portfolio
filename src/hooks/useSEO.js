@@ -37,7 +37,7 @@ const useSEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage 
     updateProperty("og:title", ogTitle || title);
     updateProperty("og:description", ogDescription || description);
     updateProperty("og:image", ogImage || "/Images/Rahul.png");
-    updateProperty("og:url", `https://acharyarahul.in${window.location.pathname}`);
+    updateProperty("og:url", `https://www.acharyarahul.in${window.location.pathname}`);
 
     // Apply Twitter Cards
     updateMeta("twitter:title", ogTitle || title);
@@ -53,7 +53,7 @@ const useSEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage 
     }
     // Clean trailing slashes if present to ensure a single URL form
     const cleanedPath = window.location.pathname.replace(/\/$/, "");
-    canonical.href = `https://acharyarahul.in${cleanedPath || "/"}`;
+    canonical.href = `https://www.acharyarahul.in${cleanedPath || "/"}`;
 
   }, [title, description, keywords, ogTitle, ogDescription, ogImage]);
 };
