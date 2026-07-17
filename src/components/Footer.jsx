@@ -44,7 +44,7 @@ const Footer = ({ navigateTo }) => {
         {/* Right Column: Contact Details */}
         <div className="space-y-4">
           <h5 className="text-xs font-mono uppercase tracking-widest text-zinc-400">// Connect</h5>
-          <div className="space-y-2 text-sm text-zinc-500 font-semibold">
+          <div className="space-y-3 text-sm text-zinc-500 font-semibold">
             <p>
               <a href="mailto:rahulkumaracharya199@gmail.com" className="hover:text-cyan-400 transition-colors">
                 rahulkumaracharya199@gmail.com
@@ -52,9 +52,19 @@ const Footer = ({ navigateTo }) => {
             </p>
             <div className="flex gap-4 pt-2">
               <a
+                href="https://acharyaworks.in"
+                target="_blank"
+                rel="noopener"
+                className="text-zinc-500 hover:text-cyan-400 transition-colors text-lg"
+                title="AcharyaWorks"
+                aria-label="AcharyaWorks"
+              >
+                <i className="fa-solid fa-briefcase"></i>
+              </a>
+              <a
                 href="https://linkedin.com/in/rahulkumaracharya/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="text-zinc-500 hover:text-cyan-400 transition-colors text-lg"
                 title="LinkedIn"
                 aria-label="LinkedIn"
@@ -64,7 +74,7 @@ const Footer = ({ navigateTo }) => {
               <a
                 href="https://github.com/rahul-kumar-acharya"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="text-zinc-500 hover:text-white transition-colors text-lg"
                 title="GitHub"
                 aria-label="GitHub"
@@ -74,7 +84,7 @@ const Footer = ({ navigateTo }) => {
               <a
                 href="https://www.instagram.com/acharyarahul.in"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="text-zinc-500 hover:text-pink-500 transition-colors text-lg"
                 title="Instagram"
                 aria-label="Instagram"

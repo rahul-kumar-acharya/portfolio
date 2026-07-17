@@ -49,9 +49,19 @@ const Home = ({ navigateTo }) => {
           {/* Social Links Outlined Squares */}
           <div className="flex justify-center md:justify-start gap-4">
             <a
+              href="https://acharyaworks.in"
+              target="_blank"
+              rel="noopener"
+              className="w-11 h-11 border border-zinc-900 rounded-lg flex items-center justify-center text-zinc-500 hover:text-cyan-400 hover:border-cyan-500/50 transition duration-300"
+              title="AcharyaWorks"
+              aria-label="AcharyaWorks Portal"
+            >
+              <i className="fa-solid fa-briefcase text-lg"></i>
+            </a>
+            <a
               href="https://linkedin.com/in/rahulkumaracharya/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="w-11 h-11 border border-zinc-900 rounded-lg flex items-center justify-center text-zinc-500 hover:text-cyan-400 hover:border-cyan-500/50 transition duration-300"
               title="LinkedIn"
               aria-label="Rahul's LinkedIn Profile"
@@ -61,7 +71,7 @@ const Home = ({ navigateTo }) => {
             <a
               href="https://github.com/rahul-kumar-acharya"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="w-11 h-11 border border-zinc-900 rounded-lg flex items-center justify-center text-zinc-500 hover:text-white hover:border-zinc-700 transition duration-300"
               title="GitHub"
               aria-label="Rahul's GitHub Profile"
@@ -71,7 +81,7 @@ const Home = ({ navigateTo }) => {
             <a
               href="https://www.instagram.com/acharyarahul.in"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="w-11 h-11 border border-zinc-900 rounded-lg flex items-center justify-center text-zinc-500 hover:text-pink-500 hover:border-pink-500/40 transition duration-300"
               title="Instagram"
               aria-label="Rahul's Instagram Profile"
