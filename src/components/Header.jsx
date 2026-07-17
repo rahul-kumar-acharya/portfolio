@@ -26,15 +26,19 @@ const Header = ({ activePage, navigateTo }) => {
             {navLinks.map((link) => {
               const isActive = activePage === link.page;
               return (
-                <button
+                <a
                   key={link.page}
-                  onClick={() => navigateTo(link.page)}
+                  href={link.page === 'home' ? '/' : `/${link.page}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateTo(link.page);
+                  }}
                   className={`text-xs font-semibold tracking-widest uppercase transition-all cursor-pointer pb-1 ${
                     isActive ? "text-cyan-500 border-b border-cyan-500" : "text-zinc-400 hover:text-white"
                   }`}
                 >
                   {link.label}
-                </button>
+                </a>
               );
             })}
             <a
@@ -66,9 +70,13 @@ const Header = ({ activePage, navigateTo }) => {
           const displayLabel = link.shortLabel || link.label;
 
           return (
-            <button
+            <a
               key={link.page}
-              onClick={() => navigateTo(link.page)}
+              href={`/${link.page}`}
+              onClick={(e) => {
+                e.preventDefault();
+                navigateTo(link.page);
+              }}
               className={`flex flex-col items-center justify-center flex-1 py-1.5 relative transition-all duration-300 cursor-pointer ${
                 isActive ? "text-cyan-500 scale-105" : "text-zinc-500 hover:text-zinc-200 active:scale-95"
               }`}
@@ -84,7 +92,7 @@ const Header = ({ activePage, navigateTo }) => {
               {isActive && (
                 <span className="absolute -bottom-1.5 w-1 h-1 bg-cyan-500 rounded-full active-dot-glow"></span>
               )}
-            </button>
+            </a>
           );
         })}
       </nav>
