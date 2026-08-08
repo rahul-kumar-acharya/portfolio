@@ -19,12 +19,12 @@ const Projects = () => {
     },
     {
       title: "EduMarks",
-      subtitle: "Academic Management System",
-      description: "Professional Academic Management System with dynamic marksheet generation, secure result verification, and institutional portals.",
+      subtitle: "Academic Record & Marksheet Platform",
+      description: "Enterprise educational management system featuring automated grade calculation, instant public result verification, print-ready PDF transcripts, and multi-role institutional portals.",
       image: "/Images/Projects/1.webp",
       github: "https://github.com/rahul-kumar-acharya/MarksheetGenerator",
       live: "https://edumarks.acharyaworks.in/",
-      tech: ["Python", "Django", "Tailwind CSS", "PostgreSQL"]
+      tech: ["Python", "Django", "Tailwind CSS", "PostgreSQL", "Cloudinary"]
     },
     {
       title: "PrepWise",
