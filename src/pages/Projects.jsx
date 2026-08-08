@@ -23,13 +23,13 @@ const Projects = () => {
       description: "Professional Academic Management System with dynamic marksheet generation, secure result verification, and institutional portals.",
       image: "/Images/Projects/1.webp",
       github: "https://github.com/rahul-kumar-acharya/MarksheetGenerator",
-      live: "",
-      tech: ["Python", "Django", "Tailwind CSS", "ReportLab"]
+      live: "https://edumarks.acharyaworks.in/",
+      tech: ["Python", "Django", "Tailwind CSS", "PostgreSQL"]
     },
     {
       title: "PrepWise",
       subtitle: "Interview Preparation",
-      description: "An interview preparation platform for full-stack developers. Features dynamic domain-based routing, a specialized 'STAR Method' behavioral engine, and a low-latency coding laboratory with integrated syntax-themed solution modeling.",
+      description: "An interactive interview preparation web application built with React and Vite. Features role-based category filtering across 12+ tech stacks, STAR-method behavioral question guides, and practical coding challenge solutions.",
       image: "/Images/Projects/3.webp", 
       github: "https://github.com/rahul-kumar-acharya/prepwise",
       live: "https://prepwise.acharyaworks.in/",
